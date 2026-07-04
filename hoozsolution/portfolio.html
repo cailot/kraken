@@ -1,0 +1,299 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="images/favicon.png" rel="icon" type="image/png"><link href="images/favicon.png" rel="apple-touch-icon"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#92001c",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary-fixed": "#ffdeaa",
+                    "on-background": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#d6e3ff",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#2e476f",
+                    "on-secondary-fixed": "#271900",
+                    "secondary-fixed-dim": "#ffba2c",
+                    "surface-variant": "#e1e3e4",
+                    "surface-container-highest": "#e1e3e4",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-dim": "#d9dadb",
+                    "primary-fixed-dim": "#aec7f7",
+                    "tertiary-container": "#730014",
+                    "on-tertiary-fixed": "#410007",
+                    "background": "#f8f9fa",
+                    "inverse-primary": "#aec7f7",
+                    "on-secondary-container": "#6b4b00",
+                    "tertiary-fixed-dim": "#ffb3b1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#001b3d",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c4c6cf",
+                    "on-surface": "#191c1d",
+                    "tertiary": "#4b0009",
+                    "primary": "#002046",
+                    "inverse-surface": "#2e3132",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-container": "#feb71a",
+                    "surface-bright": "#f8f9fa",
+                    "on-surface-variant": "#44474e",
+                    "on-secondary-fixed-variant": "#5f4100",
+                    "surface": "#f8f9fa",
+                    "tertiary-fixed": "#ffdad8",
+                    "outline": "#74777f",
+                    "on-tertiary-container": "#ff7274",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#1b365d",
+                    "on-primary-container": "#87a0cd",
+                    "surface-container": "#edeeef",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#7d5700",
+                    "surface-tint": "#465f88"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "8px",
+                    "xl": "12px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "section-gap": "80px",
+                    "container-max": "1200px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "48px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Montserrat"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "caption": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Montserrat"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script></head><body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-gradient-to-r from-primary-fixed/70 via-surface/95 to-secondary-fixed/50 backdrop-blur-md border-b border-secondary-container/40 shadow-sm">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="flex items-center gap-2 font-display-lg text-headline-sm font-bold text-primary" href="index.html"><img alt="" class="h-12 w-auto" src="images/logo.png">Hooz Solution</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="service.html">Services</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-secondary-container" href="portfolio.html">Portfolio</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a href="contact.html" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md hover:opacity-90 scale-95 active:scale-90 transition-transform">Get Started</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-margin-desktop py-section-gap max-w-container-max mx-auto text-center">
+<div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md">
+            Australia's Nationwide Digital Partner
+        </div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 text-primary">
+            Empowering Businesses Across Australia
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            We bridge the gap between high-end digital craftsmanship and local business growth. Every pixel is intentional, designed to amplify your presence from the coasts to the outback.
+        </p>
+</section>
+<!-- Portfolio Grid -->
+<section class="px-margin-desktop pb-section-gap max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Sydney Florals -->
+<div class="portfolio-item group relative overflow-hidden rounded-xl glass-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Sydney Blooms portfolio project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5gDK0jP3lModubzAY1DMShwiJ9flfvhhIVyQgLDMdXqax79jw61PwhPMZxLBUSix4VdBngPSNcqe044laO8F_pr-WnyoFFoXbwfRKnhVpcz1O14pig7zV3WsKY_BWZzJxUhBI39DMOsS0JIw8jgDUvMmF5VA9EzqjLnUUCGKAp_sdQ-brWu3CuY6WoQwuc8z4S4cBQCq0174WLgFUnyaV1-Srnso2wd4-4xAqZ4oZZiSCyvrdO4mc66bXMYT5COumtzoXB-yHr9A">
+<div class="overlay absolute inset-0 bg-primary/80 flex items-center justify-center backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all" type="button">
+                        View Site
+                        <span class="material-symbols-outlined" style="font-size: 18px;">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Sydney Blooms</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Elevating the digital petal for the Harbour City's creative botanists. A high-performance e-commerce experience for Sydney's luxury gift market.</p>
+<div class="mt-4 flex gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">E-Commerce</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">Brand Identity</span>
+</div>
+</div>
+</div>
+<!-- Perth Coffee Co -->
+<div class="portfolio-item group relative overflow-hidden rounded-xl glass-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Perth Coffee Co portfolio project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYU-I95fAdY-J9FDUDxORxnAzKVJ6NTo-_IONhDW6QgxKHiermRnPwV3lHqR8nhXGk_-s-3Qb-w2scJ2hicq2GgQk7oMqWKBzC6n_WbT8yOUOxFTCQ_rLjWS3t_T6Upvky4GJVFOm8ofYYXZv-f0wE66gR0poi73eAMZF9x3seGfQXqjHfTpRZpg6ArjIH9oKyrQKMDvfNzaA6vAwDk8d-EffzCG3DQyKyfPraZkoboD1jua0SiCgEoLFwJW1NdqSpnu57CjvvjbI">
+<div class="overlay absolute inset-0 bg-primary/80 flex items-center justify-center backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all" type="button">
+                        View Site
+                        <span class="material-symbols-outlined" style="font-size: 18px;">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Perth Coffee Co</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Capturing the WA morning rush. A mobile-first ordering platform designed for the vibrant cafe culture of Perth's CBD.</p>
+<div class="mt-4 flex gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">Web App</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">UX Design</span>
+</div>
+</div>
+</div>
+<!-- Brisbane Boutique -->
+<div class="portfolio-item group relative overflow-hidden rounded-xl glass-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Brisbane Style Hub portfolio project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD89GGWy5jpDFIoqYMT9i-cgf4KODllwq2K8RTx-X2AmpUrqqPb2ie9wrvPSQVxr-SauohwyvVOyoyPqtOpq5o7lZ23gO3MXBd_WIZjBlVh7ePB1Nkw1uV71SJiMp8CweK6EBOWuMWxdoBPczwBQbfKr--19bCfsJr6gzP98cHfgxCnv7tGahOW2sXR0sMrJbLMFy0EgS9x8Yi7Ul9M03RfF04GTgl0en3nppF7OLPQ-ewB-esnlzo4VJOH93khTEx6__WViiaf-LE">
+<div class="overlay absolute inset-0 bg-primary/80 flex items-center justify-center backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all" type="button">
+                        View Site
+                        <span class="material-symbols-outlined" style="font-size: 18px;">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Brisbane Style Hub</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Bringing Queensland flair to the global web. A refined luxury retail experience for Brisbane's leading fashion designers.</p>
+<div class="mt-4 flex gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">Luxury Retail</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">UI Design</span>
+</div>
+</div>
+</div>
+<!-- Adelaide Artisans -->
+<div class="portfolio-item group relative overflow-hidden rounded-xl glass-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl lg:col-span-2">
+<div class="aspect-[21/9] w-full overflow-hidden bg-surface-container relative">
+<img alt="Adelaide Artisans portfolio project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5rZjBdccy-UcxnGAh5OgRpYHok2GpyvGf6ud0X3cxQLxV79ohOTplTpJ4Jb5jS01rwOBp0f4s7oTPyFmCCYgFN-CSQo5BRvON4Zt06d9MeH5OvHPuGhcLZRW1wGDlPLraon0I-0HWgzMUDEq4ZRkItC63AY6a451rml9XpuyEMuRssKMsy2vsIfsIRYjCmlIAsykx7P1GzPJiNJsNPJjym_4g9KhsfLZtGJTwtAu_ZUMd_JRzEOEk7mN5oscOlxNqE0_DWcJCoF4">
+<div class="overlay absolute inset-0 bg-primary/80 flex items-center justify-center backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all" type="button">
+                        View Site
+                        <span class="material-symbols-outlined" style="font-size: 18px;">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="p-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Adelaide Artisans</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">State-wide marketplace connecting SA's makers with local and national buyers. Focused on story-driven commerce and sustainable design.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">Marketplace</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">Community Hub</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Gold Coast Gourmet -->
+<div class="portfolio-item group relative overflow-hidden rounded-xl glass-card transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container relative">
+<img alt="Gold Coast Gourmet portfolio project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbWdfDeAcet62haTfqWYRFAscZqsKK_6NEGZccdRud4O5ItXnK2P1j7zS9zKclK1XsXl75R-JCPyAodZ9VujQ_2HeDD8jBbqrWYCU1BLad4h-XQI7IBwfj-XNDvYGn5p6Iwydrm37yRCXDBQVSpXwNOgmEEd-l8S-s34ucYHN89nv9TfXGbjgIDH9XF9gp-t4hTIHmUAf-NdBI8qYbMj2IC6MZOp4YR-khXKvovtha-IAhp5uNawHZJWnyPOzOUd_v1IQeGtQk5-U">
+<div class="overlay absolute inset-0 bg-primary/80 flex items-center justify-center backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all" type="button">
+                        View Site
+                        <span class="material-symbols-outlined" style="font-size: 18px;">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Gold Coast Gourmet</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Modernizing hospitality on the coast. A high-conversion reservation engine for the region's finest beachside establishments.</p>
+<div class="mt-4 flex gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">Hospitality</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant text-caption rounded-full font-label-md">Custom CMS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="bg-primary py-section-gap relative overflow-hidden">
+<div class="relative z-10 px-margin-desktop text-center max-w-container-max mx-auto">
+<h2 class="font-headline-md text-headline-md text-on-primary mb-6">Ready to transform your Australian presence?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-10 max-w-2xl mx-auto">
+                Join the ranks of Australia's finest digital storefronts. Let's craft something exceptional together.
+            </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a href="contact.html" class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-label-md hover:scale-105 transition-transform shadow-lg">Book a Call</a>
+<button class="border border-on-primary/30 text-on-primary hover:bg-on-primary/10 px-8 py-4 rounded-lg font-label-md transition-all">Our Process</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<h2 class="font-display-lg text-headline-sm font-bold text-secondary-fixed mb-6">Hooz Solution</h2>
+<p class="font-body-md text-body-md text-on-primary/80 mb-6">
+                A premium digital studio dedicated to empowering Australian businesses nationwide.
+            </p>
+<div class="flex gap-4">
+<a class="text-on-primary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-primary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-on-primary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md mb-6 uppercase tracking-wider">Company</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="index.html">About Us</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="service.html">Services</a></li>
+<li><a class="text-secondary-fixed font-bold" href="portfolio.html">Portfolio</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="contact.html">Locations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md mb-6 uppercase tracking-wider">Legal</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="contact.html">Support</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md mb-6 uppercase tracking-wider">Subscribe</h4>
+<p class="font-body-md text-body-md text-on-primary/80 mb-4">Get the latest Australian digital trends.</p>
+<form class="flex flex-col gap-2">
+<input class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg border-none focus:ring-2 focus:ring-secondary-container" placeholder="Email Address" type="email">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-4 py-2 rounded-lg font-label-md hover:opacity-90 transition-opacity">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="border-t border-on-primary/10 px-margin-desktop py-6 text-center text-caption text-on-primary/60">
+        © 2024 Hooz Solution. Proudly supporting businesses across Australia.
+    </div>
+</footer>
+<script>
+    // Simple mobile menu toggle logic
+    const mobileToggle = document.querySelector('nav button.md\\:hidden');
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            console.log('Mobile menu toggled');
+        });
+    }
+</script>
+</body></html>
