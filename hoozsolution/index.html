@@ -1,319 +1,516 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="images/favicon.png" rel="icon" type="image/png"><link href="images/favicon.png" rel="apple-touch-icon"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
-      tailwind.config = {
-        darkMode: "class", 
-        theme: {
-          extend: {
-            "colors": {
-                    "on-tertiary-fixed-variant": "#92001c",
-                    "surface-container-low": "#f3f4f5",
-                    "secondary-fixed": "#ffdeaa",
-                    "on-background": "#191c1d",
-                    "on-primary": "#ffffff",
-                    "primary-fixed": "#d6e3ff",
-                    "on-error": "#ffffff",
-                    "on-primary-fixed-variant": "#2e476f",
-                    "on-secondary-fixed": "#271900",
-                    "secondary-fixed-dim": "#ffba2c",
-                    "surface-variant": "#e1e3e4",
-                    "surface-container-highest": "#e1e3e4",
-                    "error-container": "#ffdad6",
-                    "surface-container-high": "#e7e8e9",
-                    "surface-dim": "#d9dadb",
-                    "primary-fixed-dim": "#aec7f7",
-                    "tertiary-container": "#730014",
-                    "on-tertiary-fixed": "#410007",
-                    "background": "#f8f9fa",
-                    "inverse-primary": "#aec7f7",
-                    "on-secondary-container": "#6b4b00",
-                    "tertiary-fixed-dim": "#ffb3b1",
-                    "surface-container-lowest": "#ffffff",
-                    "on-primary-fixed": "#001b3d",
-                    "error": "#ba1a1a",
-                    "outline-variant": "#c4c6cf",
-                    "on-surface": "#191c1d",
-                    "tertiary": "#4b0009",
-                    "primary": "#002046",
-                    "inverse-surface": "#2e3132",
-                    "on-error-container": "#93000a",
-                    "inverse-on-surface": "#f0f1f2",
-                    "secondary-container": "#feb71a",
-                    "surface-bright": "#f8f9fa",
-                    "on-surface-variant": "#44474e",
-                    "on-secondary-fixed-variant": "#5f4100",
-                    "surface": "#f8f9fa",
-                    "tertiary-fixed": "#ffdad8",
-                    "outline": "#74777f",
-                    "on-tertiary-container": "#ff7274",
-                    "on-secondary": "#ffffff",
-                    "primary-container": "#1b365d",
-                    "on-primary-container": "#87a0cd",
-                    "surface-container": "#edeeef",
-                    "on-tertiary": "#ffffff",
-                    "secondary": "#7d5700",
-                    "surface-tint": "#465f88"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "unit": "8px",
-                    "section-gap": "80px",
-                    "container-max": "1200px",
-                    "margin-mobile": "16px",
-                    "margin-desktop": "48px",
-                    "gutter": "24px"
-            },
-            "fontFamily": {
-                    "display-lg": ["Montserrat"],
-                    "label-md": ["Inter"],
-                    "body-lg": ["Inter"],
-                    "display-lg-mobile": ["Montserrat"],
-                    "caption": ["Inter"],
-                    "headline-md": ["Montserrat"],
-                    "body-md": ["Inter"],
-                    "headline-sm": ["Montserrat"]
-            },
-            "fontSize": {
-                    "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                    "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                    "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                    "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                    "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }],
-                    "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                    "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                    "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
-            }
-          },
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Hooz Solution</title>
+<link href="images/favicon.png" rel="icon" type="image/png">
+<link href="images/favicon.png" rel="apple-touch-icon">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">try{
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-tertiary-fixed-variant": "#92001c", "surface-container-low": "#f3f4f5", "secondary-fixed": "#ffdeaa",
+          "on-background": "#191c1d", "on-primary": "#ffffff", "primary-fixed": "#d6e3ff", "on-error": "#ffffff",
+          "on-primary-fixed-variant": "#2e476f", "on-secondary-fixed": "#271900", "secondary-fixed-dim": "#ffba2c",
+          "surface-variant": "#e1e3e4", "surface-container-highest": "#e1e3e4", "error-container": "#ffdad6",
+          "surface-container-high": "#e7e8e9", "surface-dim": "#d9dadb", "primary-fixed-dim": "#aec7f7",
+          "tertiary-container": "#730014", "on-tertiary-fixed": "#410007", "background": "#f8f9fa",
+          "inverse-primary": "#aec7f7", "on-secondary-container": "#6b4b00", "tertiary-fixed-dim": "#ffb3b1",
+          "surface-container-lowest": "#ffffff", "on-primary-fixed": "#001b3d", "error": "#ba1a1a",
+          "outline-variant": "#c4c6cf", "on-surface": "#191c1d", "tertiary": "#4b0009", "primary": "#002046",
+          "inverse-surface": "#2e3132", "on-error-container": "#93000a", "inverse-on-surface": "#f0f1f2",
+          "secondary-container": "#feb71a", "surface-bright": "#f8f9fa", "on-surface-variant": "#44474e",
+          "on-secondary-fixed-variant": "#5f4100", "surface": "#f8f9fa", "tertiary-fixed": "#ffdad8",
+          "outline": "#74777f", "on-tertiary-container": "#ff7274", "on-secondary": "#ffffff",
+          "primary-container": "#1b365d", "on-primary-container": "#87a0cd", "surface-container": "#edeeef",
+          "on-tertiary": "#ffffff", "secondary": "#7d5700", "surface-tint": "#465f88"
         },
+        borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        spacing: { unit: "8px", "section-gap": "80px", "container-max": "1200px", "margin-mobile": "16px", "margin-desktop": "48px", gutter: "24px" },
+        fontFamily: {
+          "display-lg": ["Montserrat"], "label-md": ["Inter"], "body-lg": ["Inter"], "display-lg-mobile": ["Montserrat"],
+          caption: ["Inter"], "headline-md": ["Montserrat"], "body-md": ["Inter"], "headline-sm": ["Montserrat"]
+        },
+        fontSize: {
+          "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+          "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }],
+          "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+          "display-lg-mobile": ["36px", { lineHeight: "1.2", fontWeight: "700" }],
+          caption: ["12px", { lineHeight: "1.4", fontWeight: "400" }],
+          "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+          "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+          "headline-sm": ["24px", { lineHeight: "1.4", fontWeight: "600" }]
+        }
       }
-    }catch(_e){}</script></head><body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- TopNavBar -->
+    }
+  }
+}catch(_e){}</script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+
 <nav class="fixed top-0 w-full z-50 bg-gradient-to-r from-primary-fixed/70 via-surface/95 to-secondary-fixed/50 backdrop-blur-md border-b border-secondary-container/40 shadow-sm">
-    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-        <a class="flex items-center gap-2 font-display-lg text-headline-sm font-bold text-primary dark:text-primary-fixed" href="index.html">
-            <img alt="" class="h-12 w-auto" src="images/logo.png">
-            Hooz Solution
-        </a>
-        <div class="hidden md:flex items-center gap-8">
-            <a class="font-body-md text-body-md text-primary dark:text-primary-fixed font-bold border-b-2 border-secondary-container" href="index.html">Home</a>
-            <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="service.html">Services</a>
-            <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="portfolio.html">Portfolio</a>
-            <a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="contact.html">Contact</a>
-            <a href="contact.html" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md scale-95 active:scale-90 transition-transform hover:bg-primary-container transition-all">
-                Get Started
-            </a>
-        </div>
-        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 text-primary" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-            <span id="mobile-menu-icon" class="material-symbols-outlined">menu</span>
-        </button>
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+    <a class="flex items-center gap-2 font-display-lg text-headline-sm font-bold text-primary" href="#home" data-nav="home">
+      <img alt="" class="h-12 w-auto" src="images/logo.png">Hooz Solution
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="nav-link font-body-md text-body-md transition-colors" href="#home" data-nav="home">Home</a>
+      <a class="nav-link font-body-md text-body-md transition-colors" href="#services" data-nav="services">Services</a>
+      <a class="nav-link font-body-md text-body-md transition-colors" href="#portfolio" data-nav="portfolio">Portfolio</a>
+      <a class="nav-link font-body-md text-body-md transition-colors" href="#contact" data-nav="contact">Contact</a>
+      <a href="#contact" data-nav="contact" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md scale-95 active:scale-90 transition-transform hover:bg-primary-container">Get Started</a>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-secondary-container/40 bg-surface/95 backdrop-blur-md">
-        <div class="flex flex-col px-margin-mobile py-4 gap-1 max-w-container-max mx-auto">
-            <a class="font-body-md text-body-md text-primary font-bold py-3 border-b border-outline-variant/20" href="index.html">Home</a>
-            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors py-3 border-b border-outline-variant/20" href="service.html">Services</a>
-            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors py-3 border-b border-outline-variant/20" href="portfolio.html">Portfolio</a>
-            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors py-3 border-b border-outline-variant/20" href="contact.html">Contact</a>
-            <a href="contact.html" class="mt-3 bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md text-center hover:bg-primary-container transition-all">Get Started</a>
-        </div>
+    <button id="mobile-menu-btn" type="button" class="md:hidden p-2 text-primary" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span id="mobile-menu-icon" class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-secondary-container/40 bg-surface/95 backdrop-blur-md">
+    <div class="flex flex-col px-margin-mobile py-4 gap-1 max-w-container-max mx-auto">
+      <a class="nav-link font-body-md text-body-md py-3 border-b border-outline-variant/20" href="#home" data-nav="home">Home</a>
+      <a class="nav-link font-body-md text-body-md py-3 border-b border-outline-variant/20" href="#services" data-nav="services">Services</a>
+      <a class="nav-link font-body-md text-body-md py-3 border-b border-outline-variant/20" href="#portfolio" data-nav="portfolio">Portfolio</a>
+      <a class="nav-link font-body-md text-body-md py-3 border-b border-outline-variant/20" href="#contact" data-nav="contact">Contact</a>
+      <a href="#contact" data-nav="contact" class="mt-3 bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md text-center">Get Started</a>
     </div>
+  </div>
 </nav>
 
-<main class="pt-20">
-    <!-- Hero Section -->
-    <section class="relative min-h-[870px] flex items-center overflow-hidden px-margin-mobile md:px-margin-desktop py-section-gap">
-        <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center relative z-10">
-            <div class="space-y-6">
-                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
-                    Empowering Australian Small Businesses with Digital Excellence.
-                </h1>
-                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"></p><p dir="auto" class="body" data-pm-slice="1 1 []" style="color: rgb(18, 20, 22);">We build hard-working digital assets designed specifically to turn local traffic into revenue. No offshore hand-offs, just clean code and clear results.</p><p></p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="service.html" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg transition-all flex items-center gap-2">
-                        View Packages <span class="material-symbols-outlined">arrow_forward</span>
-                    </a>
-                    <a href="contact.html" class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-secondary-fixed transition-all">
-                        Book a Call
-                    </a>
-                </div>
-            </div>
-            <div class="relative hidden lg:block h-[600px]">
-                <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl rotate-2 transition-transform hover:rotate-0 duration-500">
-                    <img alt="Laptop displaying digital analytics and website performance dashboards" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80">
-                </div>
-                <div class="absolute -bottom-8 -left-8 bg-surface-container-lowest/95 backdrop-blur-md border border-outline-variant/30 p-6 rounded-xl shadow-xl max-w-xs animate-bounce" style="animation-duration: 3s">
-                    <div class="flex items-center gap-3 mb-2">
-                        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-                            <span class="material-symbols-outlined text-on-secondary-container">trending_up</span>
-                        </div>
-                        <span class="font-label-md text-primary font-bold">Nationwide Growth</span>
-                    </div>
-                    <p class="text-caption text-on-surface-variant">Helping local boutiques across Australia reach 40% more customers online.</p>
-                </div>
-            </div>
+<!-- HOME -->
+<div id="page-home" class="page-view pt-20">
+  <section class="relative min-h-[870px] flex items-center overflow-hidden px-margin-mobile md:px-margin-desktop py-section-gap">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center relative z-10">
+      <div class="space-y-6">
+        <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Empowering Australian Small Businesses with Digital Excellence.</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">We build hard-working digital assets designed specifically to turn local traffic into revenue. No offshore hand-offs, just clean code and clear results.</p>
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="#services" data-nav="services" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:shadow-lg transition-all flex items-center gap-2">View Packages <span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="#contact" data-nav="contact" class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-secondary-fixed transition-all">Book a Call</a>
         </div>
-        <!-- Atmospheric BG -->
-        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-fixed/20 to-transparent pointer-events-none"></div>
-    </section>
-
-    <!-- Trust Bar -->
-    <section class="bg-surface-container-low py-12 border-y border-outline-variant/30">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
-            <p class="font-label-md text-primary opacity-70 uppercase tracking-widest">Proudly supporting businesses across Australia</p>
-            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
-                <span class="font-display-lg text-headline-sm font-bold">LANEWAY CO.</span>
-                <span class="font-display-lg text-headline-sm font-bold">CRAFT &amp; OAK</span>
-                <span class="font-display-lg text-headline-sm font-bold">COASTAL PRESS</span>
-                <span class="font-display-lg text-headline-sm font-bold">URBAN BLOOM</span>
-            </div>
+      </div>
+      <div class="relative hidden lg:block h-[600px]">
+        <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl rotate-2 transition-transform hover:rotate-0 duration-500">
+          <img alt="Laptop displaying digital analytics" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80">
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
-        <div class="max-w-container-max mx-auto">
-            <div class="text-center mb-16 space-y-4">
-                <h2 class="font-headline-md text-headline-md text-primary">Engineered for commercial results</h2>
-                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto"></p><p dir="auto" class="body" data-pm-slice="1 1 []" style="color: rgb(18, 20, 22);">We replace vague aesthetic promises with high-performance digital builds. Our work is measured by the volume of customers it delivers to your business.</p><p></p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-                <!-- Custom Design -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                    <div class="w-16 h-16 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                        <span class="material-symbols-outlined text-primary group-hover:text-white" style="font-size: 32px;">brush</span>
-                    </div>
-                    <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Custom Design</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant">Unique digital identities that capture the soul of your physical storefront. No generic templates, just pure craft.</p>
-                </div>
-                <!-- Reliable Hosting -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                    <div class="w-16 h-16 rounded-lg bg-secondary-fixed flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
-                        <span class="material-symbols-outlined text-secondary group-hover:text-white" style="font-size: 32px;">cloud_done</span>
-                    </div>
-                    <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Reliable Hosting</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant">Lightning-fast Australian-based servers ensuring your customers have a seamless experience, every single visit.</p>
-                </div>
-                <!-- Ongoing Support -->
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                    <div class="w-16 h-16 rounded-lg bg-tertiary-fixed flex items-center justify-center mb-6 group-hover:bg-tertiary transition-colors">
-                        <span class="material-symbols-outlined text-tertiary group-hover:text-white" style="font-size: 32px;">support_agent</span>
-                    </div>
-                    <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Ongoing Support</h3>
-                    <p class="font-body-md text-body-md text-on-surface-variant"></p><p dir="auto" class="body-small" data-pm-slice="1 1 []" style="color: rgb(18, 20, 22);">Every line of code is written in Australia. You gain direct access to the engineers building your high-performance digital machinery.</p><p></p>
-                </div>
-            </div>
+        <div class="absolute -bottom-8 -left-8 bg-surface-container-lowest/95 backdrop-blur-md border border-outline-variant/30 p-6 rounded-xl shadow-xl max-w-xs animate-bounce" style="animation-duration: 3s">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-secondary-container">trending_up</span></div>
+            <span class="font-label-md text-primary font-bold">Nationwide Growth</span>
+          </div>
+          <p class="text-caption text-on-surface-variant">Helping local boutiques across Australia reach 40% more customers online.</p>
         </div>
-    </section>
-
-    <!-- Success Story -->
-    <section class="py-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden">
-        <div class="max-w-container-max mx-auto bg-primary-container rounded-3xl relative overflow-hidden">
-            <!-- Background Decoration -->
-            <div class="absolute top-0 right-0 w-full h-full opacity-10"></div>
-            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2">
-                <div class="p-12 md:p-20 flex flex-col justify-center space-y-8">
-                    <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-caption">
-                        SUCCESS STORY
-                    </div>
-                    <blockquote class="border-l-4 border-secondary-container pl-8">
-                        <p class="font-headline-md text-headline-md text-white italic leading-relaxed">
-                            "Hooz Solution transformed how our customers find us. They didn't just build a website; they understood our community's vibe and translated it perfectly to the screen."
-                        </p>
-                    </blockquote>
-                    <div class="flex items-center gap-4">
-                        <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-secondary-container">
-                            <img class="w-full h-full object-cover" data-alt="Close-up portrait of a smiling female boutique owner in her 40s with a warm and professional demeanor. She is standing inside her tastefully decorated Australian retail shop with soft, warm background lighting. The style is premium corporate photography with a friendly, local feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8uvAa_enCMAGHxujF2lzRm54BES_E7zC3jGODN7_pq3_SLxOS1SOJ1NHG9gC0YwT4cXmzS_jDyl5h9HP5aDOkfMJzTEIL1WimwTnph6_YYkwTrcDWGQnSdyWpLcmOdtzWqXB2_x0rgeCkZ11SZKt-XNdgwKgSmqj8NdwgwK8BcSXbJXHIIDLE4pxYJIIpMnoI-u_Npnq_rovG_TJT9N53dVezgJqzGBg4K1jQitgFuxgy2Wh61NrAp8rCwD7AWBsmyGATOkVWpuA">
-                        </div>
-                        <div>
-                            <p class="font-label-md text-white text-body-lg">Sarah Jenkins</p>
-                            <p class="font-caption text-on-primary-container">Founder, The Corner Collective - Sydney</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden lg:block relative min-h-[500px]">
-                    <img class="w-full h-full object-cover" data-alt="A detailed, wide shot of a stylishly designed retail interior in Australia, featuring minimalist display racks, warm wood textures, and a clear view of the street through large windows. The lighting is bright and airy, representing a successful local business environment. Corporate modern photography style with rich colors and deep navy shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1zVfjvM5MtfQ2mfiR0tITZgCI9G87mmy22EfLShVC2290lkmr8JfsrfsiWxyjz6ta4A80_74CqC3ZP_TWRTlA0yVSF9ZfO7OSGHipenLDFJdkJyTVTYqS3fIxY19nWCqXFii67tuqOyZC416w1KDL8CzA5HTfdrwiv_iBOP8m9NW-H5L9SNh3fTZbuBKYHTBYK1g5qSa8ZK-cb-JdWbmDJGvdih1ovt2SRZ4nSOASxrX10bHK1pKglS4jK866QXh8Os9XzWOUp6A">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!---->
-    <section class="py-section-gap px-margin-mobile md:px-margin-desktop text-center relative">
-        <div class="max-w-3xl mx-auto space-y-8">
-            <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Start Your Digital Journey Today</h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-                Join dozens of Australian businesses growing their reach with Hooz Solution.&nbsp;</p><div><span style="color: rgb(18, 20, 22);">We treat your website as an active sales asset that operates around the clock, securing local leads with absolute technical reliability and clean code.</span></div><p></p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="contact.html" class="bg-primary text-on-primary px-10 py-5 rounded-lg font-label-md text-label-md hover:scale-105 active:scale-95 transition-all shadow-lg">
-                    Get Started Now
-                </a>
-                <a href="portfolio.html" class="bg-white border-2 border-primary text-primary px-10 py-5 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-all">
-                    View Case Studies
-                </a>
-            </div>
-        </div>
-        <!-- Floating Decorative Element -->
-        <div class="absolute -z-10 top-1/2 left-10 w-32 h-32 bg-secondary-fixed/30 rounded-full blur-3xl"></div>
-        <div class="absolute -z-10 bottom-0 right-10 w-48 h-48 bg-primary-fixed/20 rounded-full blur-3xl"></div>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer class="bg-primary dark:bg-surface-container-lowest text-on-primary dark:text-primary">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
-        <div class="md:col-span-1 space-y-6">
-            <div class="font-display-lg text-headline-sm font-bold text-secondary-fixed dark:text-secondary">
-                Hooz Solution
-            </div>
-            <p class="text-on-primary/80 dark:text-on-surface-variant/80 font-body-md">
-                Empowering Australian small businesses with premium digital solutions.&nbsp;</p>
-        </div>
-        <div class="space-y-4">
-            <h4 class="font-label-md uppercase tracking-widest text-secondary-fixed dark:text-secondary">Navigation</h4>
-            <ul class="space-y-2">
-                <li class=""><a class="text-on-primary/80 dark:text-on-surface-variant/80 hover:text-on-primary dark:hover:text-on-surface hover:underline transition-all font-body-md" href="index.html">Home</a></li>
-                <li class=""><a class="text-on-primary/80 dark:text-on-surface-variant/80 hover:text-on-primary dark:hover:text-on-surface hover:underline transition-all font-body-md" href="service.html">Services</a></li>
-                <li class=""><a class="text-on-primary/80 dark:text-on-surface-variant/80 hover:text-on-primary dark:hover:text-on-surface hover:underline transition-all font-body-md" href="portfolio.html">Portfolio</a></li>
-                <li class=""><a class="text-on-primary/80 dark:text-on-surface-variant/80 hover:text-on-primary dark:hover:text-on-surface hover:underline transition-all font-body-md" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="space-y-4">
-            <h4 class="font-label-md uppercase tracking-widest text-secondary-fixed dark:text-secondary">Support</h4>
-            <ul class="space-y-2">
-                <li class=""><a class="text-on-primary/80 dark:text-on-surface-variant/80 hover:text-on-primary dark:hover:text-on-surface hover:underline transition-all font-body-md" href="#">Terms of Service</a></li>
-                <li class=""><a class="text-on-primary/80 dark:text-on-surface-variant/80 hover:text-on-primary dark:hover:text-on-surface hover:underline transition-all font-body-md" href="#">Privacy Policy</a></li>
-                <li class=""><a class="text-on-primary/80 dark:text-on-surface-variant/80 hover:text-on-primary dark:hover:text-on-surface hover:underline transition-all font-body-md" href="contact.html">Office Locations</a></li>
-                <li class=""><a class="text-on-primary/80 dark:text-on-surface-variant/80 hover:text-on-primary dark:hover:text-on-surface hover:underline transition-all font-body-md" href="contact.html">Support</a></li>
-            </ul>
-        </div>
-        <div class="space-y-4">
-            <h4 class="font-label-md uppercase tracking-widest text-secondary-fixed dark:text-secondary">Newsletter</h4>
-            <p class="text-on-primary/80 dark:text-on-surface-variant/80 text-caption">Get digital tips for your shop.</p>
-            <form class="flex gap-2">
-                <input class="bg-primary-container border-none rounded px-4 py-2 w-full text-white placeholder:text-white/50 focus:ring-2 focus:ring-secondary-container" placeholder="Email" type="email">
-                <button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded font-label-md">Join</button>
-            </form>
-        </div>
+      </div>
     </div>
-    <div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-white/10 text-center">
-        <p class="text-on-primary/60 dark:text-on-surface-variant/60 font-caption">
-            © 2024 Hooz Solution. Proudly supporting Australia's local shopfronts.
-        </p>
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-fixed/20 to-transparent pointer-events-none"></div>
+  </section>
+  <section class="bg-surface-container-low py-12 border-y border-outline-variant/30">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-8">
+      <p class="font-label-md text-primary opacity-70 uppercase tracking-widest">Proudly supporting businesses across Australia</p>
+      <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
+        <span class="font-display-lg text-headline-sm font-bold">LANEWAY CO.</span>
+        <span class="font-display-lg text-headline-sm font-bold">CRAFT &amp; OAK</span>
+        <span class="font-display-lg text-headline-sm font-bold">COASTAL PRESS</span>
+        <span class="font-display-lg text-headline-sm font-bold">URBAN BLOOM</span>
+      </div>
     </div>
+  </section>
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-16 space-y-4">
+        <h2 class="font-headline-md text-headline-md text-primary">Engineered for commercial results</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">We replace vague aesthetic promises with high-performance digital builds. Our work is measured by the volume of customers it delivers to your business.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="w-16 h-16 rounded-lg bg-primary-fixed flex items-center justify-center mb-6 group-hover:bg-primary transition-colors"><span class="material-symbols-outlined text-primary group-hover:text-white" style="font-size: 32px;">brush</span></div>
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Custom Design</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">Unique digital identities that capture the soul of your physical storefront. No generic templates, just pure craft.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="w-16 h-16 rounded-lg bg-secondary-fixed flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors"><span class="material-symbols-outlined text-secondary group-hover:text-white" style="font-size: 32px;">cloud_done</span></div>
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Reliable Hosting</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">Lightning-fast Australian-based servers ensuring your customers have a seamless experience, every single visit.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="w-16 h-16 rounded-lg bg-tertiary-fixed flex items-center justify-center mb-6 group-hover:bg-tertiary transition-colors"><span class="material-symbols-outlined text-tertiary group-hover:text-white" style="font-size: 32px;">support_agent</span></div>
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Ongoing Support</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">Every line of code is written in Australia. You gain direct access to the engineers building your high-performance digital machinery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden">
+    <div class="max-w-container-max mx-auto bg-primary-container rounded-3xl relative overflow-hidden">
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2">
+        <div class="p-12 md:p-20 flex flex-col justify-center space-y-8">
+          <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-caption">SUCCESS STORY</div>
+          <blockquote class="border-l-4 border-secondary-container pl-8">
+            <p class="font-headline-md text-headline-md text-white italic leading-relaxed">"Hooz Solution transformed how our customers find us. They didn't just build a website; they understood our community's vibe and translated it perfectly to the screen."</p>
+          </blockquote>
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-secondary-container"><img class="w-full h-full object-cover" alt="Sarah Jenkins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8uvAa_enCMAGHxujF2lzRm54BES_E7zC3jGODN7_pq3_SLxOS1SOJ1NHG9gC0YwT4cXmzS_jDyl5h9HP5aDOkfMJzTEIL1WimwTnph6_YYkwTrcDWGQnSdyWpLcmOdtzWqXB2_x0rgeCkZ11SZKt-XNdgwKgSmqj8NdwgwK8BcSXbJXHIIDLE4pxYJIIpMnoI-u_Npnq_rovG_TJT9N53dVezgJqzGBg4K1jQitgFuxgy2Wh61NrAp8rCwD7AWBsmyGATOkVWpuA"></div>
+            <div>
+              <p class="font-label-md text-white text-body-lg">Sarah Jenkins</p>
+              <p class="font-caption text-on-primary-container">Founder, The Corner Collective - Sydney</p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block relative min-h-[500px]">
+          <img class="w-full h-full object-cover" alt="Retail interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1zVfjvM5MtfQ2mfiR0tITZgCI9G87mmy22EfLShVC2290lkmr8JfsrfsiWxyjz6ta4A80_74CqC3ZP_TWRTlA0yVSF9ZfO7OSGHipenLDFJdkJyTVTYqS3fIxY19nWCqXFii67tuqOyZC416w1KDL8CzA5HTfdrwiv_iBOP8m9NW-H5L9SNh3fTZbuBKYHTBYK1g5qSa8ZK-cb-JdWbmDJGvdih1ovt2SRZ4nSOASxrX10bHK1pKglS4jK866QXh8Os9XzWOUp6A">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop text-center relative">
+    <div class="max-w-3xl mx-auto space-y-8">
+      <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Start Your Digital Journey Today</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant">Join dozens of Australian businesses growing their reach with Hooz Solution. We treat your website as an active sales asset that operates around the clock.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#contact" data-nav="contact" class="bg-primary text-on-primary px-10 py-5 rounded-lg font-label-md text-label-md hover:scale-105 active:scale-95 transition-all shadow-lg">Get Started Now</a>
+        <a href="#portfolio" data-nav="portfolio" class="bg-white border-2 border-primary text-primary px-10 py-5 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-all">View Case Studies</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- SERVICES -->
+<div id="page-services" class="page-view hidden pt-24">
+  <section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto text-center">
+    <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary-container/20 text-secondary font-label-md text-caption uppercase tracking-wider">Pricing Plans</div>
+    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Scale Your Australian Business Nationwide</h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Transparent packages designed for growing Australian businesses. No hidden fees, just expert digital craftsmanship at competitive national rates.</p>
+  </section>
+  <section class="px-margin-mobile md:px-margin-desktop pb-section-gap max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+      <div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant flex flex-col">
+        <div class="mb-8"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Essential</h3><div class="flex items-baseline gap-1"><span class="text-headline-md font-bold text-primary">$49</span><span class="text-on-surface-variant font-body-md">/mo</span></div></div>
+        <ul class="space-y-4 mb-10 flex-grow text-on-surface-variant text-sm">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Simple landing page</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>National cloud hosting</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>SSL Certificate</li>
+        </ul>
+        <a href="#contact" data-nav="contact" class="block text-center w-full py-4 rounded-lg border border-primary text-primary font-label-md hover:bg-primary hover:text-on-primary transition-colors">Start Essential</a>
+      </div>
+      <div class="bg-primary p-8 rounded-xl border-2 border-secondary-container shadow-xl scale-105 flex flex-col relative overflow-hidden">
+        <div class="absolute top-4 right-4 bg-secondary-container text-secondary font-label-md text-[10px] px-3 py-1 rounded-full uppercase">Most Popular</div>
+        <div class="mb-8"><h3 class="font-headline-sm text-headline-sm text-on-primary mb-2">Business</h3><div class="flex items-baseline gap-1"><span class="text-headline-md font-bold text-secondary-fixed">$99</span><span class="text-primary-fixed-dim font-body-md">/mo</span></div></div>
+        <ul class="space-y-4 mb-10 flex-grow text-on-primary text-sm">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>Full multi-page website</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>Australia-wide SEO strategy</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>24/7 National Priority Support</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>Monthly content updates</li>
+        </ul>
+        <a href="#contact" data-nav="contact" class="block text-center w-full py-4 rounded-lg bg-secondary-container text-on-secondary-container font-bold font-label-md shadow-lg hover:brightness-110 transition-all">Go Pro Business</a>
+      </div>
+      <div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant flex flex-col">
+        <div class="mb-8"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">E-commerce</h3><div class="flex items-baseline gap-1"><span class="text-headline-md font-bold text-primary">$149</span><span class="text-on-surface-variant font-body-md">/mo</span></div></div>
+        <ul class="space-y-4 mb-10 flex-grow text-on-surface-variant text-sm">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Full Online Store</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>AUD Payment Integration</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>National Shipping Config</li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>Abandoned Cart Recovery</li>
+        </ul>
+        <a href="#contact" data-nav="contact" class="block text-center w-full py-4 rounded-lg border border-primary text-primary font-label-md hover:bg-primary hover:text-on-primary transition-colors">Start Selling</a>
+      </div>
+    </div>
+  </section>
+  <section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-3xl mx-auto">
+    <h2 class="font-headline-md text-headline-md text-primary mb-12 text-center">Frequently Asked Questions</h2>
+    <div class="space-y-6" id="faq-list">
+      <details class="group bg-surface-container p-6 rounded-lg cursor-pointer transition-all hover:bg-surface-container-high" open>
+        <summary class="flex justify-between items-center font-label-md text-on-surface list-none">How long does it take to launch?<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span></summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">For our Essential plan, we typically launch within 7-10 business days. For more complex Business or E-commerce sites, the timeline is usually 3-5 weeks.</p>
+      </details>
+      <details class="group bg-surface-container p-6 rounded-lg cursor-pointer transition-all hover:bg-surface-container-high">
+        <summary class="flex justify-between items-center font-label-md text-on-surface list-none">Do I own my domain and content?<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span></summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Absolutely. You maintain 100% ownership of your domain and all content.</p>
+      </details>
+      <details class="group bg-surface-container p-6 rounded-lg cursor-pointer transition-all hover:bg-surface-container-high">
+        <summary class="flex justify-between items-center font-label-md text-on-surface list-none">Can I switch plans later?<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span></summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Yes, you can upgrade or downgrade your plan at any time without downtime.</p>
+      </details>
+    </div>
+  </section>
+  <section class="bg-primary py-24 text-center px-margin-mobile">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-display-lg text-headline-md md:text-display-lg text-on-primary mb-6">Ready to Elevate Your Digital Presence?</h2>
+      <p class="text-primary-fixed-dim mb-10 font-body-lg">Join 50+ Australian businesses who trust Hooz Solution.</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <a href="#contact" data-nav="contact" class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold font-label-md shadow-lg hover:scale-105 transition-transform">Start Your Project</a>
+        <a href="#contact" data-nav="contact" class="border border-on-primary text-on-primary px-10 py-4 rounded-lg font-label-md hover:bg-on-primary/10 transition-colors">Book a Free Call</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="page-portfolio" class="page-view hidden pt-24">
+  <section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto text-center">
+    <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md">Australia's Nationwide Digital Partner</div>
+    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 text-primary">Empowering Businesses Across Australia</h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">We bridge the gap between high-end digital craftsmanship and local business growth.</p>
+  </section>
+  <section class="px-margin-mobile md:px-margin-desktop pb-section-gap max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+      <div class="group relative overflow-hidden rounded-xl border border-outline-variant/20 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden"><img alt="Sydney Blooms" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5gDK0jP3lModubzAY1DMShwiJ9flfvhhIVyQgLDMdXqax79jw61PwhPMZxLBUSix4VdBngPSNcqe044laO8F_pr-WnyoFFoXbwfRKnhVpcz1O14pig7zV3WsKY_BWZzJxUhBI39DMOsS0JIw8jgDUvMmF5VA9EzqjLnUUCGKAp_sdQ-brWu3CuY6WoQwuc8z4S4cBQCq0174WLgFUnyaV1-Srnso2wd4-4xAqZ4oZZiSCyvrdO4mc66bXMYT5COumtzoXB-yHr9A"></div>
+        <div class="p-6"><h3 class="font-headline-sm text-headline-sm text-primary mb-2">Sydney Blooms</h3><p class="font-body-md text-body-md text-on-surface-variant">A high-performance e-commerce experience for Sydney's luxury gift market.</p></div>
+      </div>
+      <div class="group relative overflow-hidden rounded-xl border border-outline-variant/20 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden"><img alt="Perth Coffee Co" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYU-I95fAdY-J9FDUDxORxnAzKVJ6NTo-_IONhDW6QgxKHiermRnPwV3lHqR8nhXGk_-s-3Qb-w2scJ2hicq2GgQk7oMqWKBzC6n_WbT8yOUOxFTCQ_rLjWS3t_T6Upvky4GJVFOm8ofYYXZv-f0wE66gR0poi73eAMZF9x3seGfQXqjHfTpRZpg6ArjIH9oKyrQKMDvfNzaA6vAwDk8d-EffzCG3DQyKyfPraZkoboD1jua0SiCgEoLFwJW1NdqSpnu57CjvvjbI"></div>
+        <div class="p-6"><h3 class="font-headline-sm text-headline-sm text-primary mb-2">Perth Coffee Co</h3><p class="font-body-md text-body-md text-on-surface-variant">A mobile-first ordering platform for Perth's vibrant cafe culture.</p></div>
+      </div>
+      <div class="group relative overflow-hidden rounded-xl border border-outline-variant/20 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden"><img alt="Brisbane Style Hub" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD89GGWy5jpDFIoqYMT9i-cgf4KODllwq2K8RTx-X2AmpUrqqPb2ie9wrvPSQVxr-SauohwyvVOyoyPqtOpq5o7lZ23gO3MXBd_WIZjBlVh7ePB1Nkw1uV71SJiMp8CweK6EBOWuMWxdoBPczwBQbfKr--19bCfsJr6gzP98cHfgxCnv7tGahOW2sXR0sMrJbLMFy0EgS9x8Yi7Ul9M03RfF04GTgl0en3nppF7OLPQ-ewB-esnlzo4VJOH93khTEx6__WViiaf-LE"></div>
+        <div class="p-6"><h3 class="font-headline-sm text-headline-sm text-primary mb-2">Brisbane Style Hub</h3><p class="font-body-md text-body-md text-on-surface-variant">A refined luxury retail experience for Brisbane's leading fashion designers.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-primary py-section-gap relative overflow-hidden">
+    <div class="relative z-10 px-margin-mobile text-center max-w-container-max mx-auto">
+      <h2 class="font-headline-md text-headline-md text-on-primary mb-6">Ready to transform your Australian presence?</h2>
+      <p class="font-body-lg text-body-lg text-on-primary-container mb-10 max-w-2xl mx-auto">Join the ranks of Australia's finest digital storefronts.</p>
+      <a href="#contact" data-nav="contact" class="inline-block bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-label-md hover:scale-105 transition-transform shadow-lg">Book a Call</a>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<div id="page-contact" class="page-view hidden pt-32 pb-section-gap">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="mb-16">
+      <span class="font-label-md text-secondary tracking-widest uppercase mb-4 block">Ready to Begin?</span>
+      <h1 class="font-display-lg text-display-lg text-primary mb-6">Let's Grow Together</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">From boutique startups to established enterprises across Australia, we're here to elevate your digital presence.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+      <div class="lg:col-span-5 space-y-12">
+        <section>
+          <h2 class="font-headline-sm text-headline-sm text-primary mb-6">Local Roots, Global Standards</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">Hooz Solution was founded on the belief that businesses across Australia deserve digital tools that are as innovative and reliable as they are.</p>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0"><span class="material-symbols-outlined">location_on</span></div>
+              <div><h4 class="font-label-md text-primary">Headquarters</h4><p class="font-body-md text-on-surface-variant">Level 12, 123 Collins St<br>Melbourne VIC 3000, Australia</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0"><span class="material-symbols-outlined">mail</span></div>
+              <div><h4 class="font-label-md text-primary">Inquiries</h4><p class="font-body-md text-on-surface-variant">admin@hoozsolution.com</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0"><span class="material-symbols-outlined">call</span></div>
+              <div><h4 class="font-label-md text-primary">Phone</h4><p class="font-body-md text-on-surface-variant">1300 HOOZ SOL</p></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="lg:col-span-7">
+        <div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant/30">
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-8">Start Your National Journey</h3>
+          <form action="https://formsubmit.co/ajax/admin@hoozsolution.com" class="space-y-6" id="contactForm" method="POST">
+            <input name="_subject" type="hidden" value="Start Your National Journey — New Inquiry">
+            <input name="_template" type="hidden" value="table">
+            <input name="_captcha" type="hidden" value="false">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2"><label class="font-label-md text-on-surface-variant" for="name">Full Name</label><input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary bg-surface outline-none" id="name" name="name" placeholder="John Doe" required type="text"></div>
+              <div class="space-y-2"><label class="font-label-md text-on-surface-variant" for="business">Business Name</label><input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary bg-surface outline-none" id="business" name="business" placeholder="Your Business" required type="text"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2"><label class="font-label-md text-on-surface-variant" for="email">Email</label><input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary bg-surface outline-none" id="email" name="email" placeholder="you@business.com" required type="email"></div>
+              <div class="space-y-2"><label class="font-label-md text-on-surface-variant" for="website">Website (Optional)</label><input class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary bg-surface outline-none" id="website" name="website" placeholder="https://example.com" type="url"></div>
+            </div>
+            <div class="space-y-2"><label class="font-label-md text-on-surface-variant" for="message">Your Message</label><textarea class="w-full px-4 py-3 rounded-lg border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary bg-surface outline-none resize-none" id="message" name="message" placeholder="Tell us about your project..." required rows="5"></textarea></div>
+            <p class="hidden text-sm text-red-600" id="formError" role="alert"></p>
+            <button class="w-full md:w-auto bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-label-md hover:bg-secondary-fixed transition-colors shadow-sm active:scale-[0.98]" type="submit">Book a Consultation</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-primary text-on-primary">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+    <div class="space-y-6">
+      <div class="font-display-lg text-headline-sm font-bold text-secondary-fixed">Hooz Solution</div>
+      <p class="text-on-primary/80 font-body-md">Empowering Australian small businesses with premium digital solutions.</p>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-label-md uppercase tracking-widest text-secondary-fixed">Navigation</h4>
+      <ul class="space-y-2">
+        <li><a class="footer-link text-on-primary/80 hover:text-on-primary hover:underline transition-all font-body-md" href="#home" data-nav="home">Home</a></li>
+        <li><a class="footer-link text-on-primary/80 hover:text-on-primary hover:underline transition-all font-body-md" href="#services" data-nav="services">Services</a></li>
+        <li><a class="footer-link text-on-primary/80 hover:text-on-primary hover:underline transition-all font-body-md" href="#portfolio" data-nav="portfolio">Portfolio</a></li>
+        <li><a class="footer-link text-on-primary/80 hover:text-on-primary hover:underline transition-all font-body-md" href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-label-md uppercase tracking-widest text-secondary-fixed">Support</h4>
+      <ul class="space-y-2">
+        <li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all font-body-md" href="#">Terms of Service</a></li>
+        <li><a class="text-on-primary/80 hover:text-on-primary hover:underline transition-all font-body-md" href="#">Privacy Policy</a></li>
+        <li><a class="footer-link text-on-primary/80 hover:text-on-primary hover:underline transition-all font-body-md" href="#contact" data-nav="contact">Support</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-label-md uppercase tracking-widest text-secondary-fixed">Newsletter</h4>
+      <p class="text-on-primary/80 text-caption">Get digital tips for your shop.</p>
+      <form class="flex gap-2" onsubmit="return false">
+        <input class="bg-primary-container border-none rounded px-4 py-2 w-full text-white placeholder:text-white/50 focus:ring-2 focus:ring-secondary-container" placeholder="Email" type="email">
+        <button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded font-label-md" type="button">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-white/10 text-center">
+    <p class="text-on-primary/60 font-caption">© 2024 Hooz Solution. Proudly supporting Australia's local shopfronts.</p>
+  </div>
 </footer>
 
+<div aria-hidden="true" class="fixed inset-0 z-[100] hidden items-center justify-center p-4" id="successModal">
+  <div class="absolute inset-0 bg-primary/50 backdrop-blur-sm" data-modal-close></div>
+  <div aria-labelledby="successModalTitle" aria-modal="true" class="relative w-full max-w-md rounded-xl bg-surface-container-lowest p-8 shadow-xl border border-outline-variant/30 text-center" role="dialog">
+    <div class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container"><span class="material-symbols-outlined text-3xl">check_circle</span></div>
+    <h3 class="font-headline-sm text-headline-sm text-primary mb-3" id="successModalTitle">Inquiry Sent</h3>
+    <p class="font-body-md text-on-surface-variant mb-8">Thanks for reaching out. We've received your enquiry and will get back to you shortly.</p>
+    <button class="w-full bg-primary text-on-primary px-8 py-3 rounded-lg font-label-md hover:bg-primary-container transition-colors" data-modal-close type="button">OK</button>
+  </div>
+</div>
+
 <script>
-    (function () {
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const icon = document.getElementById('mobile-menu-icon');
-        if (!btn || !menu || !icon) return;
-        btn.addEventListener('click', () => {
-            const isOpen = menu.classList.toggle('hidden') === false;
-            btn.setAttribute('aria-expanded', String(isOpen));
-            icon.textContent = isOpen ? 'close' : 'menu';
-        });
-    })();
-</script></body></html>
+(function () {
+  const ROUTES = ['home', 'services', 'portfolio', 'contact'];
+  const pages = Object.fromEntries(ROUTES.map(r => [r, document.getElementById('page-' + r)]));
+  const navLinks = document.querySelectorAll('.nav-link');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileIcon = document.getElementById('mobile-menu-icon');
+
+  const ACTIVE = 'text-primary font-bold border-b-2 border-secondary-container';
+  const INACTIVE = 'text-on-surface-variant hover:text-primary';
+
+  function getRoute() {
+    const hash = (location.hash || '#home').slice(1);
+    return ROUTES.includes(hash) ? hash : 'home';
+  }
+
+  function closeMobileMenu() {
+    if (!mobileMenu || !mobileBtn || !mobileIcon) return;
+    mobileMenu.classList.add('hidden');
+    mobileBtn.setAttribute('aria-expanded', 'false');
+    mobileIcon.textContent = 'menu';
+  }
+
+  function updateNav(route) {
+    navLinks.forEach(link => {
+      const isActive = link.dataset.nav === route;
+      link.className = 'nav-link font-body-md text-body-md transition-colors py-3 border-b border-outline-variant/20';
+      if (link.closest('#mobile-menu')) {
+        link.className = 'nav-link font-body-md text-body-md py-3 border-b border-outline-variant/20';
+      }
+      if (isActive) {
+        link.classList.add(...ACTIVE.split(' '));
+      } else {
+        link.classList.add(...INACTIVE.split(' '));
+      }
+      if (!link.closest('#mobile-menu') && isActive) {
+        link.classList.remove('border-outline-variant/20', 'py-3');
+      }
+      if (!link.closest('#mobile-menu') && !isActive) {
+        link.classList.remove('border-b-2', 'border-secondary-container', 'font-bold');
+      }
+    });
+    document.title = 'Hooz Solution — ' + route.charAt(0).toUpperCase() + route.slice(1);
+  }
+
+  function navigate(route, scroll) {
+    ROUTES.forEach(r => {
+      if (pages[r]) pages[r].classList.toggle('hidden', r !== route);
+    });
+    updateNav(route);
+    if (scroll !== false) window.scrollTo(0, 0);
+    closeMobileMenu();
+  }
+
+  window.addEventListener('hashchange', () => navigate(getRoute()));
+  document.addEventListener('click', e => {
+    const link = e.target.closest('[data-nav]');
+    if (!link) return;
+    e.preventDefault();
+    const route = link.dataset.nav;
+    if (location.hash === '#' + route) {
+      navigate(route);
+    } else {
+      location.hash = route;
+    }
+  });
+
+  if (mobileBtn) {
+    mobileBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('hidden') === false;
+      mobileBtn.setAttribute('aria-expanded', String(isOpen));
+      mobileIcon.textContent = isOpen ? 'close' : 'menu';
+    });
+  }
+
+  document.querySelectorAll('#faq-list details').forEach(target => {
+    target.addEventListener('toggle', () => {
+      if (!target.open) return;
+      document.querySelectorAll('#faq-list details').forEach(d => {
+        if (d !== target) d.removeAttribute('open');
+      });
+    });
+  });
+
+  const form = document.getElementById('contactForm');
+  const formError = document.getElementById('formError');
+  const successModal = document.getElementById('successModal');
+  const submitBtn = form && form.querySelector('button[type="submit"]');
+  const defaultBtnText = 'Book a Consultation';
+
+  function openSuccessModal() {
+    successModal.classList.remove('hidden');
+    successModal.classList.add('flex');
+    successModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSuccessModal() {
+    successModal.classList.add('hidden');
+    successModal.classList.remove('flex');
+    successModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (submitBtn) { submitBtn.innerText = defaultBtnText; submitBtn.disabled = false; }
+  }
+
+  successModal.querySelectorAll('[data-modal-close]').forEach(el => el.addEventListener('click', closeSuccessModal));
+
+  if (form) {
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      formError.classList.add('hidden');
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Sending...';
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+        if (!res.ok) throw new Error('Unable to send your inquiry. Please try again.');
+        form.reset();
+        openSuccessModal();
+      } catch (err) {
+        formError.textContent = err.message || 'Something went wrong. Please email admin@hoozsolution.com.';
+        formError.classList.remove('hidden');
+        submitBtn.innerText = defaultBtnText;
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
+  navigate(getRoute(), false);
+})();
+</script>
+</body>
+</html>
